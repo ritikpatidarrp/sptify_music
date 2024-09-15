@@ -6,7 +6,7 @@ import { reducerCases } from '../../utils/Constants';
 import { Container } from './PlaylistsStyles';
 
 const Playlists = () => {
-  const [{ token, playlists }, dispatch] = useStateProvider();
+  const [{ token, playlists, selectedPlaylistId }, dispatch] = useStateProvider();
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -55,7 +55,8 @@ const Playlists = () => {
               }}
               key={id}
             >
-              {name}
+              {selectedPlaylistId !== id && <span className="notselected">{name}</span>}
+              {selectedPlaylistId === id && <span className="selected">{name}</span>}
             </li>
           );
         })}
