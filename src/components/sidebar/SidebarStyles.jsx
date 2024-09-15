@@ -4,16 +4,25 @@ export const Container = styled.div`
   color: #b3b3b3;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 90vh;
   transition: width 0.3s ease;
   width: ${(props) => props.width};
+  /* background-color: #dc0000; */
 
   .home_search, .library {
+    border: solid;
     background-color: #1a1515;
+    border-color: #7f7f7f;
+    /* background-color: #ff0000; */
     margin: 0.4rem;
     border-radius: 0.4rem;
   }
-
+  .home_search {
+    height: 20%;
+  }
+  .library {
+    height: 80%;
+  }
   .playlist_sbar {
     height: 100%;
     display: grid;

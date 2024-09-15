@@ -8,10 +8,6 @@ import { Container } from './SidebarStyles';
 const Sidebar = () => {
   const [width, setWidth] = useState('250px');
 
-  const toggleWidth = () => {
-    setWidth((prevWidth) => (prevWidth === '250px' ? '300px' : '250px'));
-  };
-
   return (
     <Container width={width}>
       <div className='home_search'>
@@ -34,7 +30,6 @@ const Sidebar = () => {
           <Playlists />
         </div>
       </div>
-      <button className='toggle-button' onClick={toggleWidth}>Toggle Width</button>
     </Container>
   );
 };

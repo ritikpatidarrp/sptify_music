@@ -5,16 +5,18 @@ export const FooterContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 1vw 1.3vw;
-  background-color: #282828;
   color: white;
   position: fixed;
   bottom: 0;
   margin-bottom: 0.2vh;
-  width: 97vw;
-  height: 7vh;
+  width: 96.5%;
+  height: 40px;
   margin-top: 1rem;
   margin-left: 0.2rem;
   border-radius: 0.5rem;
+  border: solid;
+  background-color: #1a1515;
+  border-color: #7f7f7f;
 `;
 
 export const TrackInfo = styled.div`
