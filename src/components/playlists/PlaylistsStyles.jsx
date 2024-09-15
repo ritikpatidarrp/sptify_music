@@ -24,6 +24,8 @@ export const Container = styled.div`
       cursor: pointer;
       transition: 0.3s ease-in-out;
       border-radius: 0.2rem;
+      border:solid;
+      border-color: rgba(255, 255, 255, 0.6);
       &:hover {
         color: #000000;
         background-color: rgba(255, 255, 255, 0.6);
@@ -31,16 +33,15 @@ export const Container = styled.div`
       .selected {
         width:100%;
         hight:100%;
-        border-radius: 0.2rem;
+        /* border-radius: 0.2rem; */
         padding: 0.5rem;
         color: #000000;
         background-color: rgba(255, 255, 255, 0.6);
       }
       .notselected {
         width:100%;
-        hight:100%;
+        height:100%;
         padding: 0.5rem;
-        border-radius: 0.2rem;
       }
     }
   }
