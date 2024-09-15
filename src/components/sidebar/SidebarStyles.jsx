@@ -32,13 +32,14 @@ export const Container = styled.div`
 
   .p_sbar {
     display: flex;
-    flex-direction: column;
-    margin-right: 10rem;
+    /* flex-direction: row; */
+    margin: 0.5rem;
     padding: 1rem;
     justify-content: center;
     background-color: #525252;
     align-content: center;
     border-radius: 1rem;
+    align-items:center;
   }
 
   .top_links {
